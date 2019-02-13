@@ -30,7 +30,7 @@ public class AIMovementManager : MonoBehaviour
 
     private AIController Controller;
     private NavMeshAgent Enemy;
-    private bool IsUpstairs = true;
+    public bool IsUpstairs = true;
 
     void Awake()
     {
@@ -68,7 +68,7 @@ public class AIMovementManager : MonoBehaviour
 
     private void Update()
     {
-        if (IsUpstairs)
+        if (!IsUpstairs)
         {
             Controller = Controllers[0];
             Enemy = Enemies[0];
