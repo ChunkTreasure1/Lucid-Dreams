@@ -6,19 +6,44 @@ public class Trigger_03 : MonoBehaviour
 {
     [SerializeField] private StoryManager Story;
     [SerializeField] private Light[] Lights;
+    [SerializeField] private SearchTrigger[] Triggers;
+
+    private bool InTrigger = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Story.SetText("Damn the fuse went, I'll need to replace it", true);
+            InTrigger = true;
+            other.GetComponent<Inventory>().SetMessageText("Press E to use", true);
+        }
+    }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            InTrigger = false;
+            other.GetComponent<Inventory>().SetMessageText("", false);
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && InTrigger)
+        {
             for (int i = 0; i < Lights.Length; i++)
             {
                 Lights[i].enabled = false;
             }
 
-            Destroy(this.gameObject);
+            for (int i = 0; i < Triggers.Length; i++)
+            {
+                Triggers[i].IsEnabled = true;
+            }
+
+            Story.SetText("Damn! The fuse went, I'll need to replace it. I believe there's one in the storage.", true);
+            Destroy(this);
         }
     }
 }

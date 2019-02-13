@@ -40,6 +40,12 @@ ModelImporter:
     4300006: Fuzebox
     4300008: Fuzebox_inside
     4300010: Screw1
+    6400000: Door
+    6400002: Fuze
+    6400004: Fuzebox
+    6400006: Fuzebox_inside
+    6400008: Screw
+    6400010: Screw1
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -73,7 +79,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 3
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
