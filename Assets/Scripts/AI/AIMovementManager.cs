@@ -13,8 +13,8 @@ public class AIMovementManager : MonoBehaviour
     [SerializeField] private float MaxHearingDistanceCrouch = 5f;
 
     [Header("Enemy")]
-    [SerializeField] private NavMeshAgent Enemy;
-    [SerializeField] private AIController Controller;
+    [SerializeField] private NavMeshAgent[] Enemies;
+    [SerializeField] private AIController[] Controllers;
 
     [Header("Guarding")]
     [SerializeField] private float WaitForIdle = 2f;
@@ -28,10 +28,16 @@ public class AIMovementManager : MonoBehaviour
     private GameObject CurrentPoint;
     private GameObject LastPoint;
 
+    private AIController Controller;
+    private NavMeshAgent Enemy;
+    private bool IsUpstairs = true;
+
     void Awake()
     {
         CurrentPointIndex = 0;
         CurrentPoint = GuardPoints[CurrentPointIndex];
+        Enemy = Enemies[0];
+        Controller = Controllers[0];
     }
 
     void Start()
@@ -54,7 +60,7 @@ public class AIMovementManager : MonoBehaviour
         {
             Enemy.SetDestination(pos);
         }
-        else
+        else if (movingMode == MovingMode.mM_Null)
         {
             Enemy.SetDestination(pos);
         }
@@ -62,6 +68,17 @@ public class AIMovementManager : MonoBehaviour
 
     private void Update()
     {
+        if (IsUpstairs)
+        {
+            Controller = Controllers[0];
+            Enemy = Enemies[0];
+        }
+        else
+        {
+            Controller = Controllers[1];
+            Enemy = Enemies[1];
+        }
+
         if (Enemy.isActiveAndEnabled)
         {
             if (ShouldDoGuardRound)
