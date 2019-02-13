@@ -119,10 +119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1332495181, guid: d3d86fb85984a18499036e6b5eed7a91, type: 3}
-      propertyPath: m_Name
-      value: Flashlight
-      objectReference: {fileID: 0}
     - target: {fileID: 1332495184, guid: d3d86fb85984a18499036e6b5eed7a91, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.3681793
@@ -166,6 +162,10 @@ PrefabInstance:
     - target: {fileID: 1332495184, guid: d3d86fb85984a18499036e6b5eed7a91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332495181, guid: d3d86fb85984a18499036e6b5eed7a91, type: 3}
+      propertyPath: m_Name
+      value: Flashlight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3d86fb85984a18499036e6b5eed7a91, type: 3}
@@ -920,11 +920,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6796993489989946583, guid: f4a58c3043bc93342bf0f5358ad0a791,
-        type: 3}
-      propertyPath: m_Name
-      value: Bed180
-      objectReference: {fileID: 0}
     - target: {fileID: 933220885485637627, guid: f4a58c3043bc93342bf0f5358ad0a791,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -979,6 +974,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796993489989946583, guid: f4a58c3043bc93342bf0f5358ad0a791,
+        type: 3}
+      propertyPath: m_Name
+      value: Bed180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4a58c3043bc93342bf0f5358ad0a791, type: 3}
@@ -2113,11 +2113,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8564969881020751836, guid: 041738880648ce848b7f914c955bef61,
-        type: 3}
-      propertyPath: m_Name
-      value: Office_Chair
-      objectReference: {fileID: 0}
     - target: {fileID: 5558303786862149491, guid: 041738880648ce848b7f914c955bef61,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2172,6 +2167,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564969881020751836, guid: 041738880648ce848b7f914c955bef61,
+        type: 3}
+      propertyPath: m_Name
+      value: Office_Chair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 041738880648ce848b7f914c955bef61, type: 3}
