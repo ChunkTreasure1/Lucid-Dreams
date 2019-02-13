@@ -280,6 +280,9 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.2
+  m_KillingDistance: 2
+  m_DeathAnim: {fileID: 3353286324015630731, guid: 32e8410bf29b12c4a950243c5556c4bd,
+    type: 3}
 --- !u!1 &142669606
 GameObject:
   m_ObjectHideFlags: 0
