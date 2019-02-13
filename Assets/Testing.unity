@@ -1549,6 +1549,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7475996170531956027, guid: f0b3aa60f56915d44b13f453afd7cbed,
+        type: 3}
+      propertyPath: MovementManager
+      value: 
+      objectReference: {fileID: 2136629498}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0b3aa60f56915d44b13f453afd7cbed, type: 3}
 --- !u!114 &2089241517 stripped
@@ -1681,9 +1686,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundSensitivity: 0.5
-  MaxHearingDistanceRun: 15
-  MaxHearingDistanceWalk: 10
-  MaxHearingDistanceCrouch: 5
+  MaxHearingDistanceRun: 10
+  MaxHearingDistanceWalk: 5
+  MaxHearingDistanceCrouch: 2
   Enemy: {fileID: 1928202167}
   Controller: {fileID: 1928202168}
   WaitForIdle: 2

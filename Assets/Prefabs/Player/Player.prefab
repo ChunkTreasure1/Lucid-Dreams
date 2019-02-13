@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementManager: {fileID: 0}
-  OnlyPlayer: 1
+  OnlyPlayer: 0
 --- !u!114 &7475996170531956028
 MonoBehaviour:
   m_ObjectHideFlags: 0
