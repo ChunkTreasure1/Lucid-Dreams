@@ -49,7 +49,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1992591716
 Transform:
@@ -90,7 +90,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c87b13591b4fe1346ad0de77284fee54, type: 3}
+  - {fileID: 2100000, guid: d1a3d24ddb6c8b747a2abb28e5c65c11, type: 3}
   - {fileID: 2100004, guid: c87b13591b4fe1346ad0de77284fee54, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -150,6 +150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Door_Right_plain
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6723692f666378843bfa5076a967eab7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6723692f666378843bfa5076a967eab7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.001
@@ -205,7 +209,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 6723692f666378843bfa5076a967eab7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c87b13591b4fe1346ad0de77284fee54, type: 3}
+      objectReference: {fileID: 2100000, guid: d1a3d24ddb6c8b747a2abb28e5c65c11, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6723692f666378843bfa5076a967eab7, type: 3}
 --- !u!1 &5235747215664317149 stripped

@@ -11,7 +11,7 @@ public class SoundSender : MonoBehaviour
     public void SendSound(float soundLevel, MovingMode movingMode)
     {
         //If the box isn't checked, send the sound
-        if (!OnlyPlayer)
+        if (!OnlyPlayer && MovementManager.GetEnemy().activeSelf)
         {
             MovementManager.SetDestination(this.transform.position, soundLevel, movingMode);
         }

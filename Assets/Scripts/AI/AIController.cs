@@ -45,6 +45,8 @@ public class AIController : MonoBehaviour
 
     public void Move(Vector3 move, bool crouch, bool jump)
     {
+        m_Animator = GetComponent<Animator>();
+
         m_IsGrounded = true;
 
         // convert the world relative moveInput vector into a local-relative
@@ -71,6 +73,8 @@ public class AIController : MonoBehaviour
 
     void UpdateAnimator(Vector3 move)
     {
+        m_Animator = GetComponent<Animator>();
+
         // update the animator parameters
         m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
         m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
@@ -98,6 +102,8 @@ public class AIController : MonoBehaviour
 
     void HandleGroundedMovement(bool crouch, bool jump)
     {
+        m_Animator = GetComponent<Animator>();
+
         // check whether conditions are right to allow a jump:
         if (jump && !crouch && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded"))
         {
@@ -143,13 +149,13 @@ public class AIController : MonoBehaviour
         {
             m_GroundNormal = hitInfo.normal;
             m_IsGrounded = true;
-            m_Animator.applyRootMotion = true;
+            GetComponent<Animator>().applyRootMotion = true;
         }
         else
         {
             m_IsGrounded = false;
             m_GroundNormal = Vector3.up;
-            m_Animator.applyRootMotion = false;
+            GetComponent<Animator>().applyRootMotion = false;
         }
     }
 
