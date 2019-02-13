@@ -62,9 +62,12 @@ public class AIMovementManager : MonoBehaviour
 
     private void Update()
     {
-        if (ShouldDoGuardRound)
+        if (Enemy.isActiveAndEnabled)
         {
-            DoGuardRound();
+            if (ShouldDoGuardRound)
+            {
+                DoGuardRound();
+            }
         }
 
         if (Enemy.isActiveAndEnabled)

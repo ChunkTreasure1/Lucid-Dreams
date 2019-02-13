@@ -15,6 +15,8 @@ public class AIController : MonoBehaviour
     [SerializeField] float m_GroundCheckDistance = 0.2f;
     [SerializeField] float m_KillingDistance = 2f;
 
+    [SerializeField] GameObject m_DeathAnim;
+
     Rigidbody m_Rigidbody;
     Animator m_Animator;
     bool m_IsGrounded;
@@ -181,7 +183,10 @@ public class AIController : MonoBehaviour
             {
                 if (hit.collider.gameObject.CompareTag("Player"))
                 {
-                    Debug.Log("Hit!");
+                    hit.collider.gameObject.SetActive(false);
+
+                    Instantiate(m_DeathAnim, transform.position, transform.rotation);
+                    this.gameObject.SetActive(false);
                 }
             }
         }

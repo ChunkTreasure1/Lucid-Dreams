@@ -2,40 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PostProcessing;
+using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
-    [SerializeField] private float NoDetectedReach;
-    [SerializeField] private float DetectedReach;
     [SerializeField] PostProcessingProfile PPProfile;
-
-    private bool IsDetected = false;
-    private float Range = 0;
     private VignetteModel.Settings VignetteSettings;
+
+    private float CurrTimerValue = 0;
+    private float CurrTimerValueScene = 0;
+    private Animator Canvas;
+
+    private void Start()
+    {
+        Canvas = GameObject.Find("Canvas").GetComponent<Animator>();
+
+        VignetteSettings = PPProfile.vignette.settings;
+        VignetteSettings.intensity = 0;
+
+        PPProfile.vignette.settings = VignetteSettings;
+        StartCoroutine(FadeTimer());
+    }
 
     private void Update()
     {
-        if (IsDetected)
-        {
-            Range = DetectedReach;
-        }
-        else
-        {
-            Range = NoDetectedReach;
-        }
+        VignetteSettings = PPProfile.vignette.settings;
+        VignetteSettings.intensity += Time.deltaTime / 5;
 
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, Range);
+        PPProfile.vignette.settings = VignetteSettings;
+    }
 
-        for (int i = 0; i < hitColliders.Length; i++)
+    private IEnumerator FadeTimer(float value = 5)
+    {
+        CurrTimerValue = value;
+        while (CurrTimerValue > 0)
         {
-            if (hitColliders[i].CompareTag("Enemy"))
-            {
-                //Play animation
-                VignetteSettings = PPProfile.vignette.settings;
-                VignetteSettings.color = new Color(0, 0, 0);
-
-                PPProfile.vignette.settings = VignetteSettings;
-            }
+            yield return new WaitForSeconds(1.0f);
+            CurrTimerValue--;
         }
+        Canvas.SetBool("IsDead", true);
+        StartCoroutine(SceneTimer());
+    }
+
+    private IEnumerator SceneTimer(float value = 2)
+    {
+        CurrTimerValueScene = value;
+        while (CurrTimerValue > 0)
+        {
+            yield return new WaitForSeconds(1.0f);
+            CurrTimerValueScene--;
+        }
+        SceneManager.LoadScene(2);
     }
 }
