@@ -127,7 +127,7 @@ public class Inventory : MonoBehaviour
 
         for (int i = 0; i < hitColliders.Length; i++)
         {
-            if (hitColliders[i].GetComponent<Item>() && !hitColliders[i].GetComponent<Item>().IsPickedUp)
+            if (hitColliders[i].GetComponent<Item>() && !hitColliders[i].GetComponent<Item>().IsPickedUp && hitColliders[i].GetComponent<Item>().IsEnabled)
             {
                 SetMessageText("Press F to pickup", true);
                 IsReadyToPickup = true;

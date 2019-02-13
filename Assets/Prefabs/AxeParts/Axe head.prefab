@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 7356712529568277163}
   - component: {fileID: 5309118931631645202}
   - component: {fileID: 3625436212805164957}
+  - component: {fileID: 1442498118707081037}
+  - component: {fileID: 2707054591497728164}
   m_Layer: 0
   m_Name: Axe head
-  m_TagString: Untagged
+  m_TagString: AxeHead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7d508da967a5427458a4d9ec5d7c96c6, type: 3}
+  - {fileID: 2100000, guid: 90ffd4841ce7eae45888275e55dfd458, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,3 +79,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1442498118707081037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408585049214980615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d613c41fd626a344ab967f67a0be0b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DropSoundLevel: 50
+  Image: {fileID: 21300000, guid: f7528f1f343c6f8458220dc49f3e9187, type: 3}
+  Tooltip: Can be used to craft an axe
+  IsEnabled: 1
+  IsPickedUp: 0
+  Name: 
+  HaveBeenUsedForCrafting: 0
+--- !u!64 &2707054591497728164
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408585049214980615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 7d508da967a5427458a4d9ec5d7c96c6, type: 3}

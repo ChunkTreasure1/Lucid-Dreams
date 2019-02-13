@@ -7,6 +7,7 @@ public class Item : MonoBehaviour
     [SerializeField] float DropSoundLevel = 50f;
     [SerializeField] private Sprite Image;
     [SerializeField] private string Tooltip;
+    [SerializeField] public bool IsEnabled = true;
 
     public bool IsPickedUp = false;
     public string Name;

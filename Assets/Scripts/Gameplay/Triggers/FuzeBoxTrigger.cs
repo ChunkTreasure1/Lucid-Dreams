@@ -6,11 +6,14 @@ public class FuzeBoxTrigger : MonoBehaviour
 {
     [SerializeField] private StoryManager Story;
     [SerializeField] private GameObject Door;
+    [SerializeField] private GameObject Broom;
 
     public bool IsEnabled = false;
     private bool InTrigger = false;
     private GameObject Player;
     private bool FirstTime = true;
+
+    private float CurrTimerValue = 0;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -55,11 +58,15 @@ public class FuzeBoxTrigger : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && InTrigger && !FirstTime)
         {
+            Player.GetComponent<Inventory>().SetMessageText("", false);
+
             if (HasFuse(Player))
             {
                 //ENEMY ATTACK - INSERT HERE
 
                 //AFTER ENEMY ATTACH
+                Story.SetText("I have to hide! I've probably made it really angry now!", true);
+                
             }
         }
     }
@@ -88,5 +95,17 @@ public class FuzeBoxTrigger : MonoBehaviour
         }
 
         return false;
+    }
+
+    private IEnumerator VisibleSlotTimer(float value = 3)
+    {
+        CurrTimerValue = value;
+        while (CurrTimerValue > 0)
+        {
+            yield return new WaitForSeconds(1.0f);
+            CurrTimerValue--;
+        }
+
+        Story.SetText("I need to make a weapon. We have to have something I can use!", true);
     }
 }
