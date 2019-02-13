@@ -6,7 +6,7 @@ public class FuzeBoxTrigger : MonoBehaviour
 {
     [SerializeField] private StoryManager Story;
     [SerializeField] private GameObject Door;
-    [SerializeField] private GameObject Broom;
+    [SerializeField] private GameObject[] Parts;
 
     public bool IsEnabled = false;
     private bool InTrigger = false;
@@ -97,7 +97,7 @@ public class FuzeBoxTrigger : MonoBehaviour
         return false;
     }
 
-    private IEnumerator VisibleSlotTimer(float value = 3)
+    private IEnumerator StoryTimer(float value = 10)
     {
         CurrTimerValue = value;
         while (CurrTimerValue > 0)
@@ -106,6 +106,17 @@ public class FuzeBoxTrigger : MonoBehaviour
             CurrTimerValue--;
         }
 
+        for (int i = 0; i < Parts.Length; i++)
+        {
+            if (!Parts[i].CompareTag("File") || !Parts[i].CompareTag("Broom"))
+            {
+                Parts[i].GetComponent<Item>().IsEnabled = true;
+            }
+            else
+            {
+                Parts[i].GetComponentInChildren<Item>().IsEnabled = true;
+            }
+        }
         Story.SetText("I need to make a weapon. We have to have something I can use!", true);
     }
 }

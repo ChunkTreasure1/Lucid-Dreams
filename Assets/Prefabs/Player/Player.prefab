@@ -494,7 +494,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -567,16 +567,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7475996170613997228}
     m_Modifications:
-    - target: {fileID: 4589422513394812577, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
-        type: 3}
-      propertyPath: m_Name
-      value: LeftArm
-      objectReference: {fileID: 0}
-    - target: {fileID: 7337201676926376216, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: eab997f4eee5c6b48b0ec55b5d646efc, type: 2}
     - target: {fileID: 2797754054801962395, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -641,6 +631,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.2372959
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337201676926376216, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: eab997f4eee5c6b48b0ec55b5d646efc, type: 2}
+    - target: {fileID: 4589422513394812577, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
+        type: 3}
+      propertyPath: m_Name
+      value: LeftArm
       objectReference: {fileID: 0}
     - target: {fileID: 4229974686914614642, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
         type: 3}
@@ -967,16 +967,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7475996170613997228}
     m_Modifications:
-    - target: {fileID: 4589422513394812577, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
-        type: 3}
-      propertyPath: m_Name
-      value: RightArm
-      objectReference: {fileID: 0}
-    - target: {fileID: 7337201676926376216, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 88be03ee84e0eff40a308c7a02b90656, type: 2}
     - target: {fileID: 2797754054801962395, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1046,6 +1036,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.2372959
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337201676926376216, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 88be03ee84e0eff40a308c7a02b90656, type: 2}
+    - target: {fileID: 4589422513394812577, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
+        type: 3}
+      propertyPath: m_Name
+      value: RightArm
       objectReference: {fileID: 0}
     - target: {fileID: 4229974686914614642, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
         type: 3}

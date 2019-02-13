@@ -71,11 +71,12 @@ public class DoorScript : MonoBehaviour
 
                         if (IsSprayed)
                         {
-                            SoundSender.SendSound(SoundLevel, MovingMode.mM_Null);
+                            SoundSender.SendSound(0, MovingMode.mM_Null);
                         }
                         else
                         {
                             CreakingDoor.Play();
+                            SoundSender.SendSound(SoundLevel, MovingMode.mM_Null);
                         }
 
                         CanOpen = false;
@@ -94,11 +95,12 @@ public class DoorScript : MonoBehaviour
 
                     if (IsSprayed)
                     {
-                        SoundSender.SendSound(SoundLevel, MovingMode.mM_Null);
+                        SoundSender.SendSound(0, MovingMode.mM_Null);
                     }
                     else
                     {
                         CreakingDoor.Play();
+                        SoundSender.SendSound(SoundLevel, MovingMode.mM_Null);
                     }
                     IsLocked = false;
                     CanOpen = false;

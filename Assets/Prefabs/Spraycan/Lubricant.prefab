@@ -251,7 +251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DropSoundLevel: 50
   Image: {fileID: 21300000, guid: ccf5e4c7a3dca5a428205a6034844cac, type: 3}
-  Tooltip: "Can be used to grease doors\xA8"
+  Tooltip: Can be used to grease doors
+  IsEnabled: 1
   IsPickedUp: 0
   Name: Spray
   HaveBeenUsedForCrafting: 0

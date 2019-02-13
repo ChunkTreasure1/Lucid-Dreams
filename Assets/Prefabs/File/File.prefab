@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 6883317473307842196}
   - component: {fileID: 3296625149445116149}
   - component: {fileID: 182362409996776215}
+  - component: {fileID: 108319480256755730}
+  - component: {fileID: 8875360790782516170}
   m_Layer: 0
   m_Name: pCube2
-  m_TagString: Untagged
+  m_TagString: File
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,6 +79,41 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &108319480256755730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4452663881988027788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d613c41fd626a344ab967f67a0be0b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DropSoundLevel: 50
+  Image: {fileID: 0}
+  Tooltip: Can be used to file materials down
+  IsEnabled: 0
+  IsPickedUp: 0
+  Name: 
+  HaveBeenUsedForCrafting: 0
+--- !u!54 &8875360790782516170
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4452663881988027788}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6447279724785356451
 GameObject:
   m_ObjectHideFlags: 0

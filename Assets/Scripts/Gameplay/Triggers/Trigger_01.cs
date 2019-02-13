@@ -54,7 +54,7 @@ public class Trigger_01 : MonoBehaviour
             Controller.CanMove = false;
             Controller.gameObject.transform.rotation = Quaternion.Euler(0f, -90f, 0f);
             Controller.gameObject.transform.position = new Vector3(12.64f, 5.463f, -10.432f);
-            Can.GetComponent<Rigidbody>().AddForce(new Vector3(5, 0, 0));
+            Can.GetComponent<Rigidbody>().AddForce(new Vector3(10, 0, 0));
 
             Enemy.SetActive(true);
             MovementManager.SetDestination(Can.transform.position, 0, MovingMode.mM_Null);
