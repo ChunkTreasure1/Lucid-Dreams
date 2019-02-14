@@ -121,29 +121,25 @@ public class Inventory : MonoBehaviour
     //Checks for an item in the proximity
     private void CheckForItem()
     {
-        Vector3 pos = transform.position;
-        pos.y += 1;
-        Collider[] hitColliders = Physics.OverlapSphere(pos, PickupDist);
-
-        for (int i = 0; i < hitColliders.Length; i++)
+        RaycastHit hit;
+        if (Physics.SphereCast(Cam.transform.position, 0.2f, Cam.transform.forward, out hit, 3f))
         {
-            if (hitColliders[i].GetComponent<Item>() && !hitColliders[i].GetComponent<Item>().IsPickedUp && hitColliders[i].GetComponent<Item>().IsEnabled)
+            GameObject obj = hit.collider.gameObject;
+            if (obj.GetComponent<Item>() && !obj.GetComponent<Item>().IsPickedUp && obj.GetComponent<Item>().IsEnabled)
             {
                 SetMessageText("Press F to pickup", true);
                 IsReadyToPickup = true;
 
-                ObjectToPickup = hitColliders[i].gameObject;
-
-                break;
+                ObjectToPickup = hit.collider.gameObject;
             }
             else
             {
                 if (ObjectToPickup != null)
                 {
                     SetMessageText("", false);
+                    IsReadyToPickup = false;
+                    ObjectToPickup = null;
                 }
-                IsReadyToPickup = false;
-                ObjectToPickup = null;
             }
         }
     }

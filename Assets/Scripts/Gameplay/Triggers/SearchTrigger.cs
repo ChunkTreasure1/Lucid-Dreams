@@ -8,6 +8,7 @@ public class SearchTrigger : MonoBehaviour
 
     private bool InTrigger = false;
     public bool IsEnabled = false;
+    private GameObject Player;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,6 +16,8 @@ public class SearchTrigger : MonoBehaviour
         {
             InTrigger = true;
             other.GetComponent<Inventory>().SetMessageText("Press E to search", true);
+
+            Player = other.gameObject;
         }
     }
 
@@ -24,6 +27,8 @@ public class SearchTrigger : MonoBehaviour
         {
             InTrigger = false;
             other.GetComponent<Inventory>().SetMessageText("", false);
+
+            Player = null;
         }
     }
 
@@ -32,6 +37,7 @@ public class SearchTrigger : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && InTrigger)
         {
             Story.SetText("Nothing...", true);
+            Player.GetComponent<Inventory>().SetMessageText("", false);
             Destroy(this);
         }
     }

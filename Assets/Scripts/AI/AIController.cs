@@ -191,7 +191,10 @@ public class AIController : MonoBehaviour
                 {
                     hit.collider.gameObject.SetActive(false);
 
-                    Instantiate(m_DeathAnim, transform.position, transform.rotation);
+                    Vector3 pos = transform.position;
+                    pos.y -= 0.3f;
+
+                    Instantiate(m_DeathAnim, pos, transform.rotation);
                     this.gameObject.SetActive(false);
                 }
             }
