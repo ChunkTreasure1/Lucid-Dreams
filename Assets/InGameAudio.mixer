@@ -6,7 +6,7 @@ AudioMixerController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MainMixer
+  m_Name: InGameAudio
   m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
@@ -16,11 +16,11 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
-  - guid: 80d544455c7968c4693656f76cbed117
-    name: volume
+  - guid: 9ca3063e1aee8c649b2f8d6ca159890b
+    name: volumeIngame
   m_AudioMixerGroupViews:
   - guids:
-    - aea00b165dbf15b438e593dfc15c8c28
+    - fdd354f1027ae004eb2ce6b667421715
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -32,10 +32,10 @@ AudioMixerGroupController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Master
   m_AudioMixer: {fileID: 24100000}
-  m_GroupID: aea00b165dbf15b438e593dfc15c8c28
+  m_GroupID: fdd354f1027ae004eb2ce6b667421715
   m_Children: []
-  m_Volume: 80d544455c7968c4693656f76cbed117
-  m_Pitch: 1c4c78bbec2dbc242bf76fb6e8b805e6
+  m_Volume: 9ca3063e1aee8c649b2f8d6ca159890b
+  m_Pitch: 05a3fdd8ac9dbba44bb48cc2693916e6
   m_Effects:
   - {fileID: 24400004}
   m_UserColorIndex: 0
@@ -49,9 +49,9 @@ AudioMixerEffectController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_EffectID: ef62e1465d4e1c54181296459c94354d
+  m_EffectID: 979556d23aef8df48b86ee67df491511
   m_EffectName: Attenuation
-  m_MixLevel: 357a120b8e1334c489668290955a68f5
+  m_MixLevel: f3e08a66f8b8a1d47887280a1b9864b6
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -64,6 +64,7 @@ AudioMixerSnapshotController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
-  m_SnapshotID: 060de1cc4bfc48843ac0fedc25f4592f
-  m_FloatValues: {}
+  m_SnapshotID: 26469c2194d85844aa10f428be3c1b91
+  m_FloatValues:
+    9ca3063e1aee8c649b2f8d6ca159890b: -0.002441872
   m_TransitionOverrides: {}

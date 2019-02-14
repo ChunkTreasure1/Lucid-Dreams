@@ -2255,7 +2255,8 @@ AudioSource:
   m_GameObject: {fileID: 960726547}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: db753e4cb5a4a894a93dbda1a144e4e5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: ece2a872d885a7e4a95de33a389cc94d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.77
@@ -4526,11 +4527,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2422437057293757457, guid: 40123b22389e35a4b95b9a1e25da4abd,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9056182391110664334, guid: 40123b22389e35a4b95b9a1e25da4abd,
         type: 3}
       propertyPath: m_Enabled
@@ -4575,16 +4571,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Shadows.m_NormalBias
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7052838713799074939, guid: 40123b22389e35a4b95b9a1e25da4abd,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7052838713799074939, guid: 40123b22389e35a4b95b9a1e25da4abd,
-        type: 3}
-      propertyPath: m_SpotAngle
-      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 734026011491193496, guid: 40123b22389e35a4b95b9a1e25da4abd,
         type: 3}
@@ -4635,6 +4621,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422437057293757457, guid: 40123b22389e35a4b95b9a1e25da4abd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7052838713799074939, guid: 40123b22389e35a4b95b9a1e25da4abd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7052838713799074939, guid: 40123b22389e35a4b95b9a1e25da4abd,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 2050075731595642969, guid: 40123b22389e35a4b95b9a1e25da4abd,
         type: 3}
@@ -7284,7 +7285,8 @@ AudioSource:
   m_GameObject: {fileID: 1782853253}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: db753e4cb5a4a894a93dbda1a144e4e5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 59fff3e6f4e6f254390a965c725bbd6b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -8529,11 +8531,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6606200937663271136, guid: 413768c98c305be4aa26f1febbe99482,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 553769374982068792, guid: 413768c98c305be4aa26f1febbe99482,
         type: 3}
       propertyPath: m_Enabled
@@ -8585,6 +8582,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7524551728676153849, guid: 413768c98c305be4aa26f1febbe99482,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606200937663271136, guid: 413768c98c305be4aa26f1febbe99482,
         type: 3}
       propertyPath: m_Enabled
       value: 1
