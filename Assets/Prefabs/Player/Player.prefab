@@ -87,7 +87,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7475996170531956019}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -739,6 +739,11 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 3707595254325216460}
+    - target: {fileID: 4229974686914614642, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8838066770272113420, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
         type: 3}
       propertyPath: m_Bones.Array.data[0]
@@ -834,6 +839,11 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 3707595254325216460}
+    - target: {fileID: 8838066770272113420, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d673aa410b1c7848bf5a4933a2d9c3b, type: 3}
 --- !u!95 &5073486017870027053 stripped
@@ -1144,6 +1154,11 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 6082104620185790054}
+    - target: {fileID: 4229974686914614642, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8838066770272113420, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
         type: 3}
       propertyPath: m_Bones.Array.data[0]
@@ -1239,6 +1254,11 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 6082104620185790054}
+    - target: {fileID: 8838066770272113420, guid: 9d673aa410b1c7848bf5a4933a2d9c3b,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d673aa410b1c7848bf5a4933a2d9c3b, type: 3}
 --- !u!95 &2412622592450558855 stripped

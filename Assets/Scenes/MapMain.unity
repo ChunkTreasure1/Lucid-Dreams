@@ -2424,7 +2424,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 24300002, guid: 0c32cd64bd4b50045ba6b7ba480881ca,
+      objectReference: {fileID: 24300002, guid: db753e4cb5a4a894a93dbda1a144e4e5,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16280e898d9863d43957612d9b225cab, type: 3}
@@ -2936,6 +2936,61 @@ PrefabInstance:
       propertyPath: PlayerInv
       value: 
       objectReference: {fileID: 666798955}
+    - target: {fileID: 1886957777373386698, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886957777373386698, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584686342244524706, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584686342244524706, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237332804267140773, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237332804267140773, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237332804267140773, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 850438020076441203, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 850438020076441203, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261845747006406645, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261845747006406645, guid: 921b4951042006a4489dd54e61f95611,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 921b4951042006a4489dd54e61f95611, type: 3}
 --- !u!1 &1317211793 stripped
