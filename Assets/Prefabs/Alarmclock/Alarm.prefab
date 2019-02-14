@@ -142,7 +142,8 @@ AudioSource:
   m_GameObject: {fileID: 2805781592754843684}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 0c32cd64bd4b50045ba6b7ba480881ca,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: d1ef90fce076cda47a22346187346c46, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -370,6 +371,7 @@ MonoBehaviour:
   DropSoundLevel: 50
   Image: {fileID: 21300000, guid: 9c48f9b0004ae504593e82f0953e9916, type: 3}
   Tooltip: Can be used to distract the monster
+  IsEnabled: 1
   IsPickedUp: 0
   Name: 
   HaveBeenUsedForCrafting: 0
