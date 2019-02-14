@@ -60,7 +60,7 @@ public class AIMovementManager : MonoBehaviour
         {
             Enemy.SetDestination(pos);
         }
-        else if (movingMode == MovingMode.mM_Null)
+        else if (movingMode == MovingMode.mM_Null && soundLevel > 5)
         {
             Enemy.SetDestination(pos);
         }
